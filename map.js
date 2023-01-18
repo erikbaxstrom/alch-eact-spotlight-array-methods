@@ -12,6 +12,7 @@ export const getCountryNames = (countries) => {
 
 export const getCountryCodes = (countries) => {
   return countries.map((country) => [country.name, country.iso2]);
+  // alternatively, return countries.map(({ name, iso2 }) => [name, iso2]);
 };
 
 // INPUT: the array of shoes from data.js
